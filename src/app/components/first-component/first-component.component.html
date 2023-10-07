@@ -3,5 +3,10 @@
 <button (click)="varChangeMais()">Aumentar</button>
 <button (click)="varChangeMenos()">Diminuir</button>
 -->
-<app-second-component *ngIf="show" [nameInput]="name"></app-second-component>
+<app-second-component *ngIf="show; else elseTemplate" [nameInput]="name"></app-second-component>
 <button (click)="show = !show">Destruir</button>
+<ng-template #elseTemplate>
+    <h1>Valentina</h1>
+</ng-template>
+
+<!-- Renderização condicional-->
