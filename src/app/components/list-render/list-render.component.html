@@ -1,0 +1,5 @@
+<div *ngFor="let user of users"> <!--usa a sintaxe *ngFor para listar a var user com a quantidade de elementos do array users -->
+    <p><strong>Nome: </strong> {{user.name}}</p> <!--{{}} essa é a chamada para a variável criada no list-render.c.TS-->
+    <p><strong>Tem capivara: </strong> {{user.dogs}}</p> <!--Aqui mostra o conteúdo do objeto dogs dentro do array users-->
+    <hr><!--hr é apenas a linha para separar os elementos do array-->
+</div>
