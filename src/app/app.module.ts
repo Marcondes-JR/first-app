@@ -7,6 +7,8 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { SecondComponentComponent } from './components/first-component/second-component/second-component.component';
 import { EventsComponent } from './components/events/events.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipeTwdbComponent } from './components/pipe-twdb/pipe-twdb.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     FirstComponentComponent,
     SecondComponentComponent,
     EventsComponent,
-    ListRenderComponent
+    ListRenderComponent,
+    PipeTwdbComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
